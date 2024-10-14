@@ -1,0 +1,140 @@
+.homeIcon {
+  width: 30px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.StoryFrame-nav-wrap {
+  margin: 20px 40px 0;
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px grey;
+  padding: 20px;
+}
+
+.StoryFrame-nav,
+.StoryFrame-nav-searchbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.StoryFrame-nav-searchbox {
+  flex: 1;
+  margin: 0 20px;
+  border: 2px solid grey;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+.StoryFrame-nav-searchbox input {
+  color: grey;
+  flex: 1;
+}
+
+.StoryFrame-nav-searchbox img {
+  background: #d2d2d2;
+  padding: 6px;
+  margin: 2px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.StoryFrame-nav-searchbox img:active {
+  background: #fff;
+}
+
+.StoryFrame-nav .btn {
+  width: 150px;
+}
+
+.StoryFrame-nav .btn a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.StoryFrame-nav .btn:active {
+  background: #000;
+}
+
+.StoryFrame-story-list {
+  border: 2px solid #111;
+  padding: 20px;
+  margin-top: 40px;
+  border-radius: 20px;
+}
+
+.StoryFrame-story-list h3 {
+  font-weight: 600;
+  text-align: center;
+  font-size: 2em;
+  padding: 20px 0;
+}
+
+.story-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px dashed grey;
+  border-bottom: 1px dashed grey;
+  padding: 20px 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.story-list-itemp p:first-child {
+  cursor: pointer;
+}
+
+.story-list-item p:first-child:hover {
+  color: #0febff;
+  cursor: pointer;
+}
+
+.story-list-item p:first-child:active {
+  color: #888;
+  cursor: pointer;
+}
+
+.story-list-item p {
+  margin: 0;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+@media (max-width: 700px) {
+  .StoryFrame-nav-wrap {
+    margin: 20px 10px;
+  }
+
+  .StoryFrame-nav {
+    flex-direction: column;
+  }
+
+  .StoryFrame-nav-searchbox {
+    padding-left: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .StoryFrame-nav .btn {
+    width: 100%;
+    margin: 20px;
+  }
+
+  .StoryFrame-story-list h3 {
+    font-size: 1.4em;
+  }
+
+  .story-list-item p {
+    font-size: 0.7em;
+  }
+
+  .HomeIcon-wrap {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 2px solid grey;
+    padding: 10px 0;
+    border-radius: 10px;
+  }
+}
