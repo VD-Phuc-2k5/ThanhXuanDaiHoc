@@ -65,7 +65,12 @@ const Story = ({ Info }) => {
                   className='story-list-item'
                   key={index}
                   aria-label={`Go to chapter ${item.title}`}>
-                  <p className='story-list-item-title'>{item.title}</p>
+                  <p
+                    className={`story-list-item-title ${
+                      Info.id === index ? "active" : ""
+                    }`}>
+                    {item.title}
+                  </p>
                   <p className='story-list-item-DateUpdate'>
                     {item.date_update}
                   </p>

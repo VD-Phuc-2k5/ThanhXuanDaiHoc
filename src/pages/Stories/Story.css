@@ -4,6 +4,10 @@
   cursor: pointer;
 }
 
+.active {
+  color: rgb(237, 135, 255);
+}
+
 .StoryFrame-nav-wrap {
   margin: 20px 40px 0;
   border-radius: 20px;
@@ -85,12 +89,12 @@
   cursor: pointer;
 }
 
-.story-list-item p:first-child:hover {
+.story-list-item p:not(.active):hover {
   color: #0febff;
   cursor: pointer;
 }
 
-.story-list-item p:first-child:active {
+.story-list-item p:not(.active):active {
   color: #888;
   cursor: pointer;
 }
